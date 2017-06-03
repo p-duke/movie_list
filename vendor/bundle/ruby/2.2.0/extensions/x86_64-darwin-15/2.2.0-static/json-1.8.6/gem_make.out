@@ -1,0 +1,13 @@
+current directory: /Users/RickDeckard/devbootcamp/phase4/movie-list/vendor/bundle/ruby/2.2.0/gems/json-1.8.6/ext/json
+/Users/RickDeckard/.rbenv/versions/2.2.5/bin/ruby -r ./siteconf20170603-1369-112zzoe.rb extconf.rb
+creating Makefile
+
+current directory: /Users/RickDeckard/devbootcamp/phase4/movie-list/vendor/bundle/ruby/2.2.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/RickDeckard/devbootcamp/phase4/movie-list/vendor/bundle/ruby/2.2.0/gems/json-1.8.6/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/RickDeckard/devbootcamp/phase4/movie-list/vendor/bundle/ruby/2.2.0/gems/json-1.8.6/ext/json
+make "DESTDIR=" install
