@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.themoviedb.org/3/search/person?api_key=c29379565234e20d7cbf4f2e835c3e41&language=en&query=Angelina%20Jolie
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Accept-Encoding:
+      - gzip, deflate
+      Content-Type:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=21600
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/json;charset=utf-8
+      Date:
+      - Tue, 09 Feb 2016 15:17:14 GMT
+      Server:
+      - openresty
+      Vary:
+      - Accept-Encoding
+      X-Ratelimit-Limit:
+      - '40'
+      X-Ratelimit-Remaining:
+      - '7'
+      X-Ratelimit-Reset:
+      - '1455031036'
+      Content-Length:
+      - '1531'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+        AA==
+    http_version: 
+  recorded_at: Tue, 09 Feb 2016 15:17:14 GMT
+recorded_with: VCR 3.0.1
