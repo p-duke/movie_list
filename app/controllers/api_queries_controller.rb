@@ -1,0 +1,2 @@
+class ApiQueriesController < ApplicationController
+end

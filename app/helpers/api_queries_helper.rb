@@ -1,0 +1,2 @@
+module ApiQueriesHelper
+end
