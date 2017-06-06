@@ -3,7 +3,8 @@ class ApiQueriesController < ApplicationController
   def index
     @query = ApiQuery.new()
     @query.search
-    @headers = @query.results["results"].first.keys
+    accepted_headers = ["title", "poster_path"]
+    @headers = @query.results["results"].first.keys.reject {|key| !accepted_headers.include?(key) }
   end
 
   def create
