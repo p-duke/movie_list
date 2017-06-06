@@ -1,0 +1,27 @@
+<div class="container table-responsive">
+  <h2>Most Popular Movies<h2>
+  <table class="table table-hover">
+    <tr>
+      <% @headers.each do |header| %>
+        <% if header == "poster_path" %>
+          <th>Poster</th>
+        <% else %>
+          <th><%= header.capitalize %></th>
+        <% end %>
+      <% end %>
+    </tr>
+      <% @query.results["results"].each do |result| %>
+        <tr>
+        <% result.each do |attr,value| %>
+          <% if attr == 'poster_path' %>
+            <td>
+              <img class="img-responsive" src="<%= @query.poster_base_uri + value %>" width="170" height="170" >
+            </td>
+          <% elsif attr == 'title' %>
+            <td><%= value %></td>
+          <% end %>
+        <% end %>
+        </tr>
+      <% end %>
+  </table>
+</div>
