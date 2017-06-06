@@ -15,14 +15,18 @@ class ApiQuery
 
   def search
     if @query
-      @results = self.class.get(@base_uri,query: {query: @params[:title]})
+      run_movie_title_query
     else
-      @results = run_default_query
+      run_popular_movie_query
     end
   end
 
-  def run_default_query
-    self.class.get(@popular_uri)
+  def run_popular_movie_query
+    @results = self.class.get(@popular_uri)
+  end
+
+  def run_movie_title_query
+    @results = self.class.get(@search_uri,query: {query: @query})
   end
 
 end
